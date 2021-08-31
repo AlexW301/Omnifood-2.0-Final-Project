@@ -30,6 +30,8 @@ Medium: 1.2
 #eb984e
 
 - Shades:
+
+#45260a
 - Accents:
 - Greys:
 #6f6f6f (lightest grey allowed on #fdf2e9) 
@@ -150,6 +152,7 @@ body {
     letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     font-size: 2rem;
@@ -158,6 +161,11 @@ body {
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
     text-decoration: none;
+
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 
     transition: all .3s;
 }
@@ -184,6 +192,11 @@ body {
     background-color: #fdf2e9;
 
     box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
 }
 
 .link:link,
