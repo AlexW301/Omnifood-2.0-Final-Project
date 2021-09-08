@@ -20,6 +20,7 @@ Paragraph default: 1.6
 Default: 1
 Small: 1.05
 Medium: 1.2
+Large: 1.8
 
 --- 02 COLORS
 
@@ -240,6 +241,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon {
