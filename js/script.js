@@ -13,14 +13,34 @@ console.log(h1);
 
 ////////////////////////////////////////////////////////////
 // Set copyright year automatically
-const yearEl = document.querySelector('.year')
+const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear
+yearEl.textContent = currentYear;
 
 ////////////////////////////////////////////////////////////
 // Make mobile navigation work
 
-// ('nav-open')
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+btnNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle('nav-open')
+});
+
+// Need to make mobile nav close when clicking a navigation link
+
+////////////////////////////////////////////////////////////
+// Smooth Scrolling animation
+
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+    console.log(href)
+  })
+})
 
 
 

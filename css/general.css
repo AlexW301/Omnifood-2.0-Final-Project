@@ -71,6 +71,9 @@ html {
 
     /* Onlyworks if there is nothing absolutley positioned in relation to body */
     overflow-x: hidden;
+    
+    /* Only works for chrome and firefox / Does not work on Safari or Microsoft Edge / All iphones/ipads only use safari even chrome on iphone uses safari as the render engine*/
+    /* scroll-behavior: smooth; */
 }
 
 body {
