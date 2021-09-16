@@ -58,6 +58,34 @@ allLinks.forEach(function (link) {
   });
 });
 
+////////////////////////////////////////////////////////////
+// Sticky Navigation
+
+const sectionHeroEl = document.querySelector('.section-hero');
+const sectionHeaderEl = document.querySelector('.header');
+
+const obs = new IntersectionObserver(function(entries){
+  // Entries is an array of elements. In this case there is just one element so we store it in a new variable.
+  const ent = entries[0]
+
+  if (ent.isIntersecting === false) {
+    document.body.classList.add('sticky');
+  }
+
+  if (ent.isIntersecting === true) {
+    document.body.classList.remove('sticky');
+  }
+}, 
+{
+  // In the viewport
+  root: null,
+  // Will have an event as soon as 0% of the hero-section is in the viewport
+  threshold: 0,
+  // Marign applied outside of the root
+  rootMargin: '-80px',
+});
+obs.observe(sectionHeroEl);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
