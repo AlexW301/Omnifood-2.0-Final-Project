@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs" />
+    <meta name="description"
+        content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs" />
 
     <!-- Always include this line of code!!! -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Web favicon -->
-    <link rel="icon" href="public/img/favicon.png"/>
+    <link rel="icon" href="public/img/favicon.png" />
+
+    <!-- FOR NODE.JS Version -->
+    <link rel="icon" href="img/favicon.png" />
     <!-- Apple favicon -->
-    <link rel="apple-touch-icon" href="public/img/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" href="public/img/apple-touch-icon.png" />
     <!-- Android favicon -->
-    <link rel="manifest" href="manifest.webmanifest"/>
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,10 +27,18 @@
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="stylesheet" href="public/css/queries.css" />
 
+    <!-- FOR NODE.JS Version -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script defer src="public/js/script.js"></script>
+
+    <!-- FOR NODE.JS Version -->
+    <script defer src="js/script.js"></script>
 
     <title>Omnifood &mdash; Never cook again!</title>
 </head>
@@ -57,6 +69,8 @@
             <div class="hero">
                 <div class="hero-text-box">
                     <h1 class="heading-primary">
+                        <!-- Add variable with EJS -->
+                        <!-- <%= text %> -->
                         A healthy meal delivered to your door, every single day
                     </h1>
                     <p class="hero-description">
@@ -86,14 +100,14 @@
                         <source srcset="public/img/hero.png" type="image/png" />
 
                         <img src="public/img/hero.png"
-                        alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-                        class="hero-img" />
+                            alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                            class="hero-img" />
                     </picture>
 
                     <!-- <img src="./img/hero.png"
                         alt="Woman enjoying food, meals in storage container, and food bowls on a table"
                         class="hero-img" /> -->
-        
+
                 </div>
             </div>
         </section>
@@ -140,7 +154,8 @@
 
                 <!-- STEP 02 -->
                 <div class="step-img-box">
-                    <img src="public/img/app/app-screen-2.png" class="step-img" alt="Iphone app meal approving plan screen" />
+                    <img src="public/img/app/app-screen-2.png" class="step-img"
+                        alt="Iphone app meal approving plan screen" />
                 </div>
 
                 <div class="step-text-box">
@@ -280,7 +295,8 @@
                 </h2>
                 <div class="testimonials">
                     <figure class="testimonial">
-                        <img src="public/img/customers/dave.jpg" class="testimonial-img" alt="Photo of customer Dave Bryson">
+                        <img src="public/img/customers/dave.jpg" class="testimonial-img"
+                            alt="Photo of customer Dave Bryson">
                         <blockquote class="testimonial-text">
                             Inexpensive, healthy and great-tasting meals, without even having to order manually! It
                             feels truly magical.
@@ -289,7 +305,8 @@
                     </figure>
 
                     <figure class="testimonial">
-                        <img src="public/img/customers/ben.jpg" class="testimonial-img" alt="Photo of customer Ben Hadley">
+                        <img src="public/img/customers/ben.jpg" class="testimonial-img"
+                            alt="Photo of customer Ben Hadley">
                         <blockquote class="testimonial-text">
                             The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing
                             not to worry about food anymore!
@@ -513,9 +530,15 @@
                 </a>
 
                 <ul class="social-links">
-                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a></li>
-                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a></li>
-                    <li><a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a></li>
+                    <li><a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                        </a></li>
                 </ul>
 
                 <p class="copyright">
@@ -527,7 +550,7 @@
                 <address class="contacts">
                     <p class="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
                     <p>
-                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br/>
+                        <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br />
                         <a class="footer-link" href="mail:hello@omnifood.com">hello@omnifood.com</a>
                     </p>
                 </address>
